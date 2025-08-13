@@ -1,0 +1,30 @@
+/* Main App styles */
+.App {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 100px; /* Add space for navbar */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 5px;
+  }
+} 

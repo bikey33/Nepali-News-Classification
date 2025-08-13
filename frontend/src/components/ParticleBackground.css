@@ -1,0 +1,25 @@
+/* Particle Background styles */
+.particle-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.8;
+  filter: blur(0.5px);
+}
+
+/* Smooth canvas rendering */
+.particle-background {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Animation performance optimizations */
+.particle-background {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+} 
